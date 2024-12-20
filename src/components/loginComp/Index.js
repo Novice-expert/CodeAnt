@@ -47,27 +47,29 @@ function LoginComp() {
          <div className='font-inter codeAntText flex flex-col justify-center'>CodeAnt AI</div>
      </div>
      <div className='welcomeText flex flex-row justify-center'>Welcome to CodeAnt AI</div>
+     <div className='buttonSecParent'>
      <div className="flex flex-row justify-between buttonsSection">
      <div
        onClick={() => setSelected('SAAS')}
        className={`flex flex-row justify-center items-center cursor-pointer ${
-         selected === 'SAAS' ? 'bg-blue-600 text-white rounded-md font-inter' : 'bg-white text-black font-inter'
+         selected === 'SAAS' ? 'bg-blue-600 text-white rounded-md font-inter' : 'bg-[#FAFAFA] rounded-md text-black font-inter '
        }`}
        style={{ width: '50%', padding: '10px', transition: 'background-color 0.3s' }}
      >
-       <div className="flex flex-col justify-center">SAAS</div>
+       <div className="flex flex-col justify-center saasText font-inter">SAAS</div>
      </div>
 
      <div
        onClick={() => setSelected('Self Hosted')}
        className={`flex flex-row justify-center items-center cursor-pointer ${
-         selected === 'Self Hosted' ? 'bg-blue-600 text-white rounded-md font-inter' : 'bg-white text-black font-inter'
+         selected === 'Self Hosted' ? 'bg-blue-600 text-white rounded-md font-inter' : 'bg-[#FAFAFA] rounded-md text-black font-inter'
        }`}
        style={{ width: '50%', padding: '10px', transition: 'background-color 0.3s' }}
      >
-       <div className="flex flex-col justify-center">Self Hosted</div>
+       <div className="flex flex-col justify-center saasText font-inter">Self Hosted</div>
      </div>
-   </div>
+    </div>
+    </div>
 
    {selected === 'SAAS' && 
 

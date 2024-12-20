@@ -58,6 +58,19 @@ margin-top:30px;
 }
 .buttonsSection{
     margin-top:15px;
+    border:1px solid #E9EAEB ;
+    border-radius:8px;
+}
+.saasText{
+font-size: 20px;
+font-weight: 600;
+line-height: 28px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.buttonSecParent{
     padding-left:24px;
     padding-right:24px;
 }

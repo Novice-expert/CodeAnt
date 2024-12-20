@@ -172,14 +172,14 @@ useEffect(() => {
     <div className=' topParent'>
     <div className=' leftNav flex flex-col justify-between'>
       <div>
-          <div className='flex flex-row gap-3 justify-center'>
+          <div className='flex flex-row gap-3 justify-start'>
             <div className='logoSmall'><img style={{width:"100%",height:"100%"}} src={logoSmall}/></div>
             <div className='font-inter codeAntText flex flex-col justify-center'>CodeAnt AI</div>
           </div>  
           <div className="relative" ref={dropdownRef}>
           {/* Dropdown Trigger */}
           <div
-            className="marginTopHelp flex flex-row rounded-md cursor-pointer  p-2"
+            className="marginTopHelp flex flex-row justify-between rounded-md cursor-pointer "
             onClick={toggleDropdown}
           >
             <div className="flex flex-col justify-center truncate">{selectedOptionName}</div>
@@ -230,7 +230,7 @@ useEffect(() => {
   
         {/* AI Code Review */}
         <div
-          className={` marginBelowHelp flex flex-row gap-2 rounded-md cursor-pointer ${
+          className={` marginBelowHelpSec flex flex-row gap-2 rounded-md cursor-pointer ${
             selectedOption === 'AI Code Review' ? 'bg-[#1570EF] text-white' : 'bg-white text-black'
           }`}
           onClick={() => setSelectedOption('AI Code Review')}
@@ -243,7 +243,7 @@ useEffect(() => {
   
         {/* Cloud Security */}
         <div
-          className={` marginBelowHelp flex flex-row gap-2 rounded-md cursor-pointer ${
+          className={` marginBelowHelpSec flex flex-row gap-2 rounded-md cursor-pointer ${
             selectedOption === 'Cloud Security' ? 'bg-[#1570EF] text-white' : 'bg-white text-black'
           }`}
           onClick={() => setSelectedOption('Cloud Security')}
@@ -256,7 +256,7 @@ useEffect(() => {
   
         {/* How to Use */}
         <div
-          className={` marginBelowHelp flex flex-row gap-2 rounded-md cursor-pointer ${
+          className={` marginBelowHelpSec flex flex-row gap-2 rounded-md cursor-pointer ${
             selectedOption === 'How to Use' ? 'bg-[#1570EF] text-white' : 'bg-white text-black'
           }`}
           onClick={() => setSelectedOption('How to Use')}
@@ -269,7 +269,7 @@ useEffect(() => {
   
         {/* Settings */}
         <div
-          className={` marginBelowHelp flex flex-row gap-2 rounded-md cursor-pointer ${
+          className={` marginBelowHelpSec flex flex-row gap-2 rounded-md cursor-pointer ${
             selectedOption === 'Settings' ? 'bg-[#1570EF] text-white' : 'bg-white text-black'
           }`}
           onClick={() => setSelectedOption('Settings')}
