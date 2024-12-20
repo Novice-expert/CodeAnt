@@ -38,3 +38,15 @@ text-underline-position: from-font;
 text-decoration-skip-ink: none;
 
 }
+
+@media (max-width: 850px) {
+   .bottomTxtCard{
+    font-size:14px;
+   }
+   .gapBottomCard{
+    gap:24px;
+   }
+   .nameCard{
+    font-size:18px;
+   }
+    }  

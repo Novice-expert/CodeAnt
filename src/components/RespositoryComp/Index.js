@@ -174,7 +174,7 @@ useEffect(() => {
       <div>
           <div className='flex flex-row gap-3 justify-start'>
             <div className='logoSmall'><img style={{width:"100%",height:"100%"}} src={logoSmall}/></div>
-            <div className='font-inter codeAntText flex flex-col justify-center'>CodeAnt AI</div>
+            <div className='font-inter codeAntTextRepo flex flex-col justify-center'>CodeAnt AI</div>
           </div>  
           <div className="relative" ref={dropdownRef}>
           {/* Dropdown Trigger */}

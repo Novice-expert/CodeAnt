@@ -8,13 +8,16 @@ import code from '../../assets/code.svg';
 import cloud from '../../assets/cloud.svg';
 import how from '../../assets/howToUse.svg';
 import gear from '../../assets/gear.svg';
+import support from '../../assets/support.svg'
+import logout from '../../assets/logout.svg'
+import { useNavigate } from 'react-router-dom';
 
 function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOptionName, setSelectedOptionName] = useState('Utkarsh Dhairya Panwar');
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState('Repositories');
-
+  const navigate = useNavigate();
   const dropdownRef = useRef(null);
 
   const toggleMenu = () => {
@@ -44,12 +47,16 @@ function MobileNav() {
     setMenuOpen(false); // Close the navbar when an option is clicked
     setIsOpen(false); // Close the dropdown
   };
+  const logoutFunc = () => {
+    navigate('/'); 
+};
+
 
   return (
     <div className='flex flex-col navMobPadding' style={{ width: "100%" }}>
       <div className='flex flex-row justify-between'>
         <div className='flex flex-row gap-2'>
-          <div>
+          <div className='logoSmallMob'>
             <img src={logo} alt="Logo" />
           </div>
           <div className='flex flex-col justify-center'>
@@ -118,7 +125,7 @@ function MobileNav() {
 
         {/* AI Code Review */}
         <div
-          className={`marginBelowHelp flex flex-row gap-2 rounded-md cursor-pointer ${
+          className={`marginBelowHelpSec flex flex-row gap-2 rounded-md cursor-pointer ${
             selectedOption === 'AI Code Review' ? 'bg-[#1570EF] text-white' : 'bg-white text-black'
           }`}
           onClick={() => handleOptionClick('AI Code Review')}
@@ -131,7 +138,7 @@ function MobileNav() {
 
         {/* Cloud Security */}
         <div
-          className={`marginBelowHelp flex flex-row gap-2 rounded-md cursor-pointer ${
+          className={`marginBelowHelpSec flex flex-row gap-2 rounded-md cursor-pointer ${
             selectedOption === 'Cloud Security' ? 'bg-[#1570EF] text-white' : 'bg-white text-black'
           }`}
           onClick={() => handleOptionClick('Cloud Security')}
@@ -144,7 +151,7 @@ function MobileNav() {
 
         {/* How to Use */}
         <div
-          className={`marginBelowHelp flex flex-row gap-2 rounded-md cursor-pointer ${
+          className={`marginBelowHelpSec flex flex-row gap-2 rounded-md cursor-pointer ${
             selectedOption === 'How to Use' ? 'bg-[#1570EF] text-white' : 'bg-white text-black'
           }`}
           onClick={() => handleOptionClick('How to Use')}
@@ -157,7 +164,7 @@ function MobileNav() {
 
         {/* Settings */}
         <div
-          className={`marginBelowHelp flex flex-row gap-2 rounded-md cursor-pointer ${
+          className={`marginBelowHelpSec flex flex-row gap-3 rounded-md cursor-pointer ${
             selectedOption === 'Settings' ? 'bg-[#1570EF] text-white' : 'bg-white text-black'
           }`}
           onClick={() => handleOptionClick('Settings')}
@@ -166,6 +173,15 @@ function MobileNav() {
             <img src={selectedOption === 'Settings' ? selectedHome : gear} alt="Settings Icon" />
           </div>
           <div className="optText text-md">Settings</div>
+        </div>
+
+        <div className=' marginBelowHelpBottom flex flex-row gap-2 rounded-md'>
+          <div className='flex flex-col justify-center'><img src={support}/></div>
+          <div className=' optText text-md'>Support</div>
+        </div>
+        <div className=' marginBelowHelpBottom flex flex-row gap-2 rounded-md' onClick={logoutFunc}>
+          <div className='flex flex-col justify-center'><img src={logout}/></div>
+          <div className=' optText text-md'>Logout</div>
         </div>
       </div>
     </div>

@@ -33,7 +33,7 @@
     overflow-y: auto; 
 }
 
-.codeAntText{
+.codeAntTextRepo{
 font-size: 24px;
 font-weight: 400;
 line-height: 26.4px;
@@ -139,6 +139,7 @@ text-decoration-skip-ink: none;
 .mobNav{
     display:none;
 }
+
 @media (max-width: 850px) {
     .leftNav {
       display:none;

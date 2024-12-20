@@ -25,6 +25,10 @@
     opacity: 0; 
     transition: height 0.3s ease, opacity 0.3s ease; 
   }
+  .logoSmallMob{
+    height:32px;
+    width:28px;
+}
 
   .mobileMenu.open {
     width:100%;
