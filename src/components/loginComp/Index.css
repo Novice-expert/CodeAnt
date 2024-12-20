@@ -1,0 +1,141 @@
+.mainLogin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    gap: 24px;
+    background-color: #FAFAFA;
+    background-image: url("../../assets/bgSignIn.svg"); 
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: center; /* Centers the image within the container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.rightContPadd{
+    padding-left:12px;
+    padding-right: 24px;
+    justify-content:center;
+}
+.rightPart{
+    padding-top:36px;
+    width:100%;
+    border-radius:12px;
+    border:1px solid #E9EAEB;
+    /* margin-top:150px; */
+    height:554px;
+    background-color:white;
+    box-shadow: 0px 1px 2px 0px var(--ColorsEffectsShadowsshadow-xs);
+
+
+}
+.leftPart{
+    padding-left:6%;
+    padding-right:6%;
+    width:50%;
+}
+.codeAntText{
+font-size: 30px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.logoSmall{
+    width:40px;
+    height:38px;
+}
+.welcomeText{
+    font-family: Inter;
+font-size: 32px;
+font-weight: 600;
+line-height: 48px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin-top:30px;
+
+}
+.buttonsSection{
+    margin-top:15px;
+    padding-left:24px;
+    padding-right:24px;
+}
+.saasProduct{
+    width:152px;
+    height:60px;
+    border-radius:8px;
+    font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 28px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.btnSaas{
+    color:white;
+    background: #1570EF;
+
+}
+.buttonsContainer{
+    border-top:1px solid #D5D7DA;
+    gap:16px;
+    margin-top:26px;
+    border-bottom-left-radius:8px;
+}
+.buttonsContainer{
+    padding-top:24px;
+    padding-bottom:24px;
+}
+.buttonFirst{
+    padding-top:13px;
+    padding-bottom:13px;
+    border-radius:8px;
+    border:1px solid #D8DAE5;
+}
+.loginText{
+    margin-top:32px;
+}
+.optSignInText{
+    font-family: Inter;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.rightContPadd{
+    width:50%;
+   }
+
+@media screen and (max-width: 960px) {
+    .welcomeText{
+        font-size:24px;
+        margin-top:20px;
+    }
+   .mainLogin{
+    flex-direction:column;
+    background-image:none;
+   }
+   .leftPart{
+   display:none;
+   }
+   .rightContPadd{
+    width:100%;
+    padding-left:24px;
+   }
+   .optSignInText{
+    font-size:16px;
+   }
+   .loginText{
+    font-size:14px;
+   }
+   .mainLogin{
+    justify-content:center;
+   }
+  }
+  

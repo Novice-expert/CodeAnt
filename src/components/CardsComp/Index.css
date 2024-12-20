@@ -1,0 +1,40 @@
+.cardCont{
+    height:108px;
+    padding:24px;
+}
+.nameCard{
+font-size: 20px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+.accessDiv{
+    color:#175CD3;
+    background-color:#EFF8FF;
+    height:24px;
+    width:59px;
+    border-radius:50px;
+    font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.gapBottomCard{
+    gap:40px;
+}
+.bottomTxtCard{
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
