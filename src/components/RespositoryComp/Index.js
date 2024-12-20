@@ -172,7 +172,7 @@ useEffect(() => {
     <div className=' topParent'>
     <div className=' leftNav flex flex-col justify-between'>
       <div>
-          <div className='flex flex-row gap-3 justify-start'>
+          <div className='flex flex-row gap-2 justify-start'>
             <div className='logoSmall'><img style={{width:"100%",height:"100%"}} src={logoSmall}/></div>
             <div className='font-inter codeAntTextRepo flex flex-col justify-center'>CodeAnt AI</div>
           </div>  
@@ -269,7 +269,7 @@ useEffect(() => {
   
         {/* Settings */}
         <div
-          className={` marginBelowHelpSec flex flex-row gap-2 rounded-md cursor-pointer ${
+          className={` marginBelowHelpSec flex flex-row gap-3 rounded-md cursor-pointer ${
             selectedOption === 'Settings' ? 'bg-[#1570EF] text-white' : 'bg-white text-black'
           }`}
           onClick={() => setSelectedOption('Settings')}

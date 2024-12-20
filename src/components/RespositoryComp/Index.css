@@ -56,6 +56,10 @@ text-decoration-skip-ink: none;
     /* gap:8px; */
     cursor:pointer;
 }
+.logoSmall{
+    width:27px;
+    height:26px;
+}
 .marginBelowHelp{
     margin-top:16px;
     padding-top:10px;
